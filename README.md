@@ -1,5 +1,5 @@
 ## Installation
-This theme relies on starship for its functionality. Therefore, you will need to install starship on your system. The fist two steps are snippets from the official [starship docs](https://starship.rs/guide/) to help you get started. =^..^=
+This theme relies on starship for its functionality. Therefore, you will need to install starship on your system. The first two steps are snippets from the official [starship docs](https://starship.rs/guide/) to help you get started. =^..^=
 
 ### Step 1. Install Starship
 
