@@ -1,153 +1,65 @@
-# ^.,.^ - maow!
-
-[battery]
-full_symbol = "•"
-charging_symbol = "⇡"
-discharging_symbol = "⇣"
+format = """
+[ /ᐠ - ˕ -マ ](bg:#282C34 fg:#E3E3E3)\
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$rust\
+$python\
+$cmake\
+$golang\
+$java\
+$kotlin\
+$lua\
+$cmd_duration\
+\n$time $character"""
 
 [git_branch]
 symbol = "↑ "
 
-[bun]
-format = "via [bun ]($style)"
-
-[buf]
-format = "via [buf ]($style)"
-
 [cmake]
 format = "via [c ]($style)"
 
-[cobol]
-format = "via [cobol ]($style)"
-
-[crystal]
-format = "via [crystal ]($style)"
-
-[daml]
-format = "via [daml ]($style)"
-
-[dart]
-format = "via [dart ]($style)"
-
-[deno]
-format = "via [deno ]($style)"
-
-[dotnet]
-format = "[$symbol(🎯 $tfm )]($style)"
-
-[elixir]
-format = 'via [elixir ]($style)'
-
-[elm]
-format = 'via [elm ]($style)'
-
-[erlang]
-format = 'via [erlang ]($style)'
-
-[fennel]
-format = 'via [fennel ]($style)'
-
 [golang]
-format = 'via [golang ]($style)'
-
-[gradle]
-format = 'via [gradle ]($style)'
-
-[haxe]
-format = 'via [haxe ]($style)'
-
-[helm]
-format = 'via [helm ]($style)'
+format = 'via [go ]($style)'
 
 [java]
 format = 'via [java ]($style)'
 
-[julia]
-format = 'via [julia ]($style)'
-
 [kotlin]
-format = 'via [kotlin ]($style)'
+format = 'via [kt ]($style)'
 
 [lua]
 format = 'via [lua ]($style)'
 
-[meson]
-format = 'via [meson ]($style)'
-
-[nim]
-format = 'via [nim ]($style)'
-
 [nodejs]
-format = 'via [node ]($style)'
-
-[ocaml]
-format = 'via [$symbol(\($switch_indicator$switch_name\) )]($style)'
-
-[opa]
-format = 'via [opa ]($style)'
-
-[perl]
-format = 'via [perl ]($style)'
-
-[php]
-format = 'via [php ]($style)'
-
-[pulumi]
-format = 'via [pulumi ]($style)'
-
-[purescript]
-format = 'via [pursescript ]($style)'
+format = 'via [node ](#7AFF8E)'
 
 [python]
-format = 'via [py ]($style)'
-
-[raku]
-format = 'via [raku ]($style)'
-
-[red]
-format = 'via [red ]($style)'
-
-[rlang]
-format = 'via [rlang ]($style)'
-
-[ruby]
-format = 'via [ruby ]($style)'
+format = 'via [py ](#FDF68B)'
 
 [rust]
 format = 'via [rs ]($style)'
 
-[solidity]
-format = 'via [solidity ]($style)'
-
-[swift]
-format = 'via [swift ]($style)'
-
-[vagrant]
-format = 'via [vagrant ]($style)'
-
-[vlang]
-format = 'via [vlang ]($style)'
-
-[zig]
-format = 'via [zig ]($style)'
-
-
 [directory]
-format = "[/ᐠ - ˕ -マ $path ]($style)"
+format = "[ $path ](#85A0FF)"
 truncation_length = 3
 truncation_symbol = "/"
 
 [git_status]
-format = '([$all_status$ahead_behind]($style) )'
-untracked = '[✘ $count](yellow)'
-staged = '[+\($count\)](green)'
-deleted = '[✘ $count ](red)'
+format = '([$all_status$ahead_behind](#FF8FAB) )'
+untracked = '[✘ $count](#FDF68B)'
+staged = '[+\($count\)](#7AFF8E)'
+deleted = '[✘ $count ](#FF5564)'
 conflicted = ''
 ahead = ''
 behind = ''
 modified = ''
 
+[cmd_duration]
+format = 'took [$duration](#FDF68B) '
+
 [time]
 disabled = false
 time_format = "%I:%M %p" # Hour:Minute AM/PM Format
-format = '[$time](white) '
+format = '[$time](white)'
