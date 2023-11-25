@@ -1,7 +1,7 @@
 # ^..^ ~ made by sebiram
 
 format = """
-[ /ᐠ - ˕ -マ ](bg:#282C34 fg:#E3E3E3)\
+[/ᐠ - ˕ -マ](#E3E3E3)\
 $directory\
 $git_branch\
 $git_status\
