@@ -68,5 +68,5 @@ time_format = "%I:%M %p" # Hour:Minute AM/PM Format
 format = '[$time](white)'
 
 [character]
-success_symbol = '[✘](#7AFF8E)'
-error_symbol = '[✘](#FF5564)'
+success_symbol = '[❯](#7AFF8E)'
+error_symbol = '[❯](#FF5564)'
