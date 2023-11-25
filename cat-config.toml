@@ -52,14 +52,12 @@ truncation_length = 3
 truncation_symbol = "/"
 
 [git_status]
-format = "[$all_status$ahead_behind](#FF8FAB)"
+format = "[$all_status](#FF8FAB)"
 untracked = '[✘ $count](#FDF68B)'
 staged = '[+\($count\)](#7AFF8E)'
 deleted = '[✘ $count ](#FF5564)'
 diverged = ''
 conflicted = ''
-ahead = ''
-behind = ''
 modified = ''
 
 [time]
