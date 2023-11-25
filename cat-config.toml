@@ -48,7 +48,7 @@ truncation_symbol = "/"
 
 [git_status]
 format = '([$all_status$ahead_behind](#FF8FAB) )'
-untracked = '[✘ $count](#FDF68B)'
+unstaged = '[✘ $count](#FDF68B)'
 staged = '[+\($count\)](#7AFF8E)'
 deleted = '[✘ $count ](#FF5564)'
 conflicted = ''
