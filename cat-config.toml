@@ -14,7 +14,8 @@ $java\
 $kotlin\
 $lua\
 $cmd_duration\
-\n$time $character"""
+$time\
+\n $character"""
 
 [git_branch]
 symbol = "↑ "
@@ -35,16 +36,16 @@ format = 'via [kt ]($style)'
 format = 'via [lua ]($style)'
 
 [nodejs]
-format = 'via [node ](#7AFF8E)'
+format = 'via [node ](#88f75c)'
 
 [python]
-format = 'via [py ](#FDF68B)'
+format = 'via [py ](#ffd343)'
 
 [rust]
-format = 'via [rs ]($style)'
+format = 'via [rs ](#CE422B)'
 
 [cmd_duration]
-format = 'took [$duration - meow](#FDF68B) '
+format = 'took [$duration - meow](#Fee7aa) '
 
 [directory]
 format = "[ $path ](#85A0FF)"
@@ -52,18 +53,20 @@ truncation_length = 3
 truncation_symbol = "/"
 
 [git_status]
-format = "[$all_status](#FF8FAB)"
-untracked = '[✘ $count](#FDF68B)'
-staged = '[+\($count\)](#7AFF8E)'
-deleted = '[✘ $count ](#FF5564)'
+format = "[$all_status$ahead_behind](#FF8FAB)"
+modified = '[M-$count ](#Fee7aa)'
+deleted = '[D-$count ](#FF5564)'
+untracked = '[U-$count ](#ffb16e)'
+staged = '[S-$count ](#7AFF8E)'
 diverged = ''
 conflicted = ''
-modified = ''
+ahead = ''
+behind = ''
 
 [time]
-disabled = false
+disabled = true
 time_format = "%I:%M %p" # Hour:Minute AM/PM Format
-format = '[$time](white)'
+format = 'at [$time](white)'
 
 [character]
 success_symbol = '[=^..^=](#7AFF8E)'
