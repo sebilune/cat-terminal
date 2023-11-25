@@ -14,7 +14,7 @@ $java\
 $kotlin\
 $lua\
 $cmd_duration\
-\n $character"""
+\n$character"""
 
 [git_branch]
 symbol = "↑ "
@@ -44,7 +44,7 @@ format = 'via [py ](#ffd343)'
 format = 'via [rs ](#CE422B)'
 
 [cmd_duration]
-format = 'took [$duration - meow](#Fee7aa) '
+format = 'took [$duration - meow](#ffec75) '
 
 [directory]
 format = "[ $path ](#85A0FF)"
@@ -53,15 +53,20 @@ truncation_symbol = "/"
 
 [git_status]
 format = "[$all_status$ahead_behind](#FF8FAB)"
-modified = '[M-$count ](#Fee7aa)'
-deleted = '[D-$count ](#FF5564)'
-untracked = '[U-$count ](#ffb16e)'
-staged = '[S-$count ](#7AFF8E)'
+modified = '[M\($count\) ](#ffec75)'
+deleted = '[D\($count\) ](#FF5564)'
+untracked = '[U\($count\) ](#ffb16e)'
+staged = '[S\($count\) ](#7AFF8E)'
 diverged = ''
 conflicted = ''
 ahead = ''
 behind = ''
 
+[time]
+disabled = false
+time_format = "%I:%M %p" # Hour:Minute AM/PM Format
+format = '[$time](white)'
+
 [character]
-success_symbol = '[=^..^=](#7AFF8E)'
-error_symbol = '[=^..^=](#FF5564)'
+success_symbol = '[✘](#7AFF8E)'
+error_symbol = '[✘](#FF5564)'
