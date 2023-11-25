@@ -221,7 +221,7 @@ eval "$(starship init zsh)"
 
 ### Step 3: Bring the kitty to life
 
-I. Clone this repository containing your preset file (`cat-config.toml`) using the following command, assuming you have git installed:
+I. Clone this repository containing the theme file (`cat-config.toml`) using the following command, assuming you have git installed:
 
 ```bash
 git clone https://github.com/sebiram/cat-terminal.git
