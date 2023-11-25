@@ -14,7 +14,6 @@ $java\
 $kotlin\
 $lua\
 $cmd_duration\
-$time\
 \n $character"""
 
 [git_branch]
@@ -62,11 +61,6 @@ diverged = ''
 conflicted = ''
 ahead = ''
 behind = ''
-
-[time]
-disabled = true
-time_format = "%I:%M %p" # Hour:Minute AM/PM Format
-format = 'at [$time](white)'
 
 [character]
 success_symbol = '[=^..^=](#7AFF8E)'
