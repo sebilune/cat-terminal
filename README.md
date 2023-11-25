@@ -239,4 +239,4 @@ III. Run the command below to apply the preset configurations to starship's conf
 cp -f cat-config.toml ~/.config/starship.toml
 ```
 
-And you're all done, Congratulations! Refresh your shell and you should see the prompt interface known to man. Styled by yours truly.
+And you're all done, Congratulations! Refresh your shell and you should see the best prompt interface known to man. Styled by yours truly.
