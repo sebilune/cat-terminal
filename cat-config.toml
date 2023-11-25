@@ -1,3 +1,5 @@
+# ^..^ ~ made by sebiram
+
 format = """
 [ /ᐠ - ˕ -マ ](bg:#282C34 fg:#E3E3E3)\
 $directory\
@@ -18,7 +20,7 @@ $cmd_duration\
 symbol = "↑ "
 
 [cmake]
-format = "via [c ]($style)"
+format = 'via [clang ]($style)'
 
 [golang]
 format = 'via [go ]($style)'
@@ -41,6 +43,9 @@ format = 'via [py ](#FDF68B)'
 [rust]
 format = 'via [rs ]($style)'
 
+[cmd_duration]
+format = 'took [$duration - meow](#FDF68B) '
+
 [directory]
 format = "[ $path ](#85A0FF)"
 truncation_length = 3
@@ -51,15 +56,17 @@ format = '([$all_status$ahead_behind](#FF8FAB) )'
 unstaged = '[✘ $count](#FDF68B)'
 staged = '[+\($count\)](#7AFF8E)'
 deleted = '[✘ $count ](#FF5564)'
+diverged = ''
 conflicted = ''
 ahead = ''
 behind = ''
 modified = ''
 
-[cmd_duration]
-format = 'took [$duration](#FDF68B) '
-
 [time]
 disabled = false
 time_format = "%I:%M %p" # Hour:Minute AM/PM Format
 format = '[$time](white)'
+
+[character]
+success_symbol = '[=^..^=](#7AFF8E)'
+error_symbol = '[=^..^=](#FF5564)'
