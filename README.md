@@ -221,7 +221,7 @@ eval "$(starship init zsh)"
 
 ### Step 3: Bring the kitty to life
 
-I. Clone this repository containing the theme file (`cat-config.toml`) using the following command, assuming you have git installed:
+I. Clone this repository containing the theme file (`starship.toml`) using the following command, assuming you have git installed:
 
 ```bash
 git clone https://github.com/sebiram/cat-terminal.git
@@ -233,10 +233,10 @@ II. Navigate to the cloned folder:
 cd cat-terminal
 ```
 
-III. Run the command below to apply the preset configurations to starship's config file:
+III. Run the command below to replace the preset configurations to starship's config file:
 
 ```bash
-cp -f cat-config.toml ~/.config/starship.toml
+cp starship.toml ~/.config/starship.toml
 ```
 
 And you're all done, Congratulations! Refresh your shell and you should see the best prompt interface known to man. Styled by yours truly.

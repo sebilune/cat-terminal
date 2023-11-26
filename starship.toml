@@ -1,4 +1,4 @@
-# ^..^ ~ made by sebiram
+# ^..^ ~ made by @sebiram
 
 format = """
 [/ᐠ - ˕ -マ](#E3E3E3)\
@@ -17,34 +17,35 @@ $cmd_duration\
 \n$character"""
 
 [git_branch]
-symbol = "↑ "
+symbol = "↑"
+format = 'on [[git:\([$branch(:$remote_branch)](#FF5564)\)](#85A0FF)](#FF5564) '
 
 [cmake]
-format = 'via [clang ]($style)'
+format = 'via [clang $version]($style)'
 
 [golang]
-format = 'via [go ]($style)'
+format = 'via [go $version]($style)'
 
 [java]
-format = 'via [java ]($style)'
+format = 'via [java $version]($style)'
 
 [kotlin]
-format = 'via [kt ]($style)'
+format = 'via [kt $version]($style)'
 
 [lua]
-format = 'via [lua ]($style)'
+format = 'via [lua $version]($style)'
 
 [nodejs]
-format = 'via [node ](#88f75c)'
+format = 'via [node $version](#88F75C)'
 
 [python]
-format = 'via [py ](#ffd343)'
+format = 'via [py $version](#FFD343)'
 
 [rust]
-format = 'via [rs ](#CE422B)'
+format = 'via [rs $version](#CE422B)'
 
 [cmd_duration]
-format = 'took [$duration - meow](#ffec75) '
+format = 'took [$duration - meow](#FFEC75) '
 
 [directory]
 format = "[ $path ](#85A0FF)"
@@ -52,11 +53,12 @@ truncation_length = 3
 truncation_symbol = "/"
 
 [git_status]
-format = "[$all_status$ahead_behind](#FF8FAB)"
-modified = '[M\($count\) ](#ffec75)'
+format = "[$all_status$ahead_behind]($style)"
+modified = '[M\($count\) ](#FFEC75)'
 deleted = '[D\($count\) ](#FF5564)'
 untracked = '[U\($count\) ](#ffb16e)'
 staged = '[S\($count\) ](#7AFF8E)'
+renamed = '[R\($count\) ](#FF8FAB)'
 diverged = ''
 conflicted = ''
 ahead = ''
