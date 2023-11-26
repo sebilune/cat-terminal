@@ -16,9 +16,25 @@ $lua\
 $cmd_duration\
 \n$character"""
 
+[directory]
+format = "[ $path ](#85A0FF)"
+truncation_length = 3
+truncation_symbol = "/"
+
 [git_branch]
-symbol = "↑"
 format = 'on [[git:\([$branch(:$remote_branch)](#FF5564)\)](#85A0FF)](#FF5564) '
+
+[git_status]
+format = "[$all_status$ahead_behind]($style)"
+modified = '[M\($count\) ](#FFEC75)'
+deleted = '[D\($count\) ](#FF5564)'
+untracked = '[U\($count\) ](#ffb16e)'
+staged = '[S\($count\) ](#7AFF8E)'
+renamed = '[R\($count\) ](#FF8FAB)'
+diverged = ''
+conflicted = ''
+ahead = ''
+behind = ''
 
 [cmake]
 format = 'via [clang $version]($style)'
@@ -46,23 +62,6 @@ format = 'via [rs $version](#CE422B)'
 
 [cmd_duration]
 format = 'took [$duration - meow](#FFEC75) '
-
-[directory]
-format = "[ $path ](#85A0FF)"
-truncation_length = 3
-truncation_symbol = "/"
-
-[git_status]
-format = "[$all_status$ahead_behind]($style)"
-modified = '[M\($count\) ](#FFEC75)'
-deleted = '[D\($count\) ](#FF5564)'
-untracked = '[U\($count\) ](#ffb16e)'
-staged = '[S\($count\) ](#7AFF8E)'
-renamed = '[R\($count\) ](#FF8FAB)'
-diverged = ''
-conflicted = ''
-ahead = ''
-behind = ''
 
 [time]
 disabled = false
