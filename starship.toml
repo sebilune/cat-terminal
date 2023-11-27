@@ -1,7 +1,7 @@
 # ^..^ ~ made by @sebiram
 
 format = """
-[/ᐠ - ˕ -マ](#E3E3E3)\
+[/ᐠ - ˕ -マ ](white)\
 $directory\
 $git_branch\
 $git_status\
@@ -17,57 +17,52 @@ $cmd_duration\
 \n$character"""
 
 [directory]
-format = "[ $path ](#85A0FF)"
+format = "[$path ](#85A0FF)"
 truncation_length = 3
-truncation_symbol = "/"
+truncation_symbol = '/'
 
 [git_branch]
-format = 'on [[git:\([$branch(:$remote_branch)](#FF5564)\)](#85A0FF)](#FF5564) '
+format = '[git:\([$branch(:$remote_branch)](white)\)](#f1502f) '
 
 [git_status]
 format = "[$all_status$ahead_behind]($style)"
-modified = '[M\($count\) ](#FFEC75)'
-deleted = '[D\($count\) ](#FF5564)'
-untracked = '[U\($count\) ](#ffb16e)'
-staged = '[S\($count\) ](#7AFF8E)'
-renamed = '[R\($count\) ](#FF8FAB)'
+modified = '[M\($count\) ](#F0E68C)'
+deleted = '[D\($count\) ](red)'
+untracked = '[U\($count\) ](#87CEFA)'
+staged = '[S\($count\) ](#90EE90)'
+renamed = '[R\($count\) ](#FFC0CB)'
 diverged = ''
 conflicted = ''
 ahead = ''
 behind = ''
 
 [cmake]
-format = 'via [clang $version]($style)'
+format = '[clang $version ]($style)'
 
 [golang]
-format = 'via [go $version]($style)'
+format = '[go $version ]($style)'
 
 [java]
-format = 'via [java $version]($style)'
+format = '[java $version ]($style)'
 
 [kotlin]
-format = 'via [kt $version]($style)'
+format = '[kt $version ]($style)'
 
 [lua]
-format = 'via [lua $version]($style)'
+format = '[lua $version ]($style)'
 
 [nodejs]
-format = 'via [node $version](#88F75C)'
+format = '[node $version ](#88F75C)'
 
 [python]
-format = 'via [py $version](#FFD343)'
+format = '[py $version ](#FFD343)'
 
 [rust]
-format = 'via [rs $version](#CE422B)'
+format = '[rs $version ](#CE422B)'
 
 [cmd_duration]
-format = 'took [$duration - meow](#FFEC75) '
-
-[time]
-disabled = false
-time_format = "%I:%M %p" # Hour:Minute AM/PM Format
-format = '[$time](white)'
+format = '[$duration ](white) '
 
 [character]
-success_symbol = '[❯](#7AFF8E)'
-error_symbol = '[❯](#FF5564)'
+success_symbol = '[\$](#90EE90)'
+error_symbol = '[\$](red)'
