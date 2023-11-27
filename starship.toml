@@ -61,7 +61,7 @@ format = '[py $version ](#FFD343)'
 format = '[rs $version ](#CE422B)'
 
 [cmd_duration]
-format = '[$duration ](white) '
+format = '[$duration ](white)'
 
 [character]
 success_symbol = '[\$](#90EE90)'
