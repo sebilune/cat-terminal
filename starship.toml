@@ -2,9 +2,6 @@
 
 format = """
 [/ᐠ - ˕ -マ ](white)\
-$directory\
-$git_branch\
-$git_status\
 $nodejs\
 $rust\
 $python\
@@ -14,7 +11,12 @@ $java\
 $kotlin\
 $lua\
 $cmd_duration\
-\n$character"""
+\n\
+$directory\
+$git_branch\
+$git_status\
+$character\
+"""
 
 [directory]
 format = "[$path ](#85A0FF)"
@@ -22,15 +24,15 @@ truncation_length = 3
 truncation_symbol = '/'
 
 [git_branch]
-format = '[git:\([$branch(:$remote_branch)](white)\)](#f1502f) '
+format = '[git:\([$branch(:$remote_branch)](white)\)](#f1502f)'
 
 [git_status]
-format = "[$all_status$ahead_behind]($style)"
-modified = '[M\($count\) ](#F0E68C)'
-deleted = '[D\($count\) ](red)'
-untracked = '[U\($count\) ](#87CEFA)'
-staged = '[S\($count\) ](#90EE90)'
-renamed = '[R\($count\) ](#FFC0CB)'
+format = "[$all_status$ahead_behind ]($style)"
+modified = '[*](#f1502f)'
+deleted = ''
+untracked = ''
+staged = ''
+renamed = ''
 diverged = ''
 conflicted = ''
 ahead = ''
@@ -43,7 +45,7 @@ format = '[clang $version ]($style)'
 format = '[go $version ]($style)'
 
 [java]
-format = '[java $version ]($style)'
+format = '[java $version ](#F89917)'
 
 [kotlin]
 format = '[kt $version ]($style)'
@@ -61,8 +63,8 @@ format = '[py $version ](#FFD343)'
 format = '[rs $version ](#CE422B)'
 
 [cmd_duration]
-format = '[$duration ](white)'
+format = '[$duration](white)'
 
 [character]
-success_symbol = '[\$](#90EE90)'
+success_symbol = '[\$](white)'
 error_symbol = '[\$](red)'
