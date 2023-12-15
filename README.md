@@ -219,9 +219,7 @@ eval "$(starship init zsh)"
 
 </details>
 
-### Step 3: Bring the kitty to life
-
-## Install using Linux/MacOS
+### Step 3. Install using Linux/MacOS
 
 Using curl:
 ```bash
