@@ -221,8 +221,14 @@ eval "$(starship init zsh)"
 
 ### Step 3: Bring the kitty to life
 
-Clone this repository containing the theme file (`starship.toml`) using the following command, assuming you have git installed:
+## Install using Linux/MacOS
 
+Using curl:
 ```bash
-git clone https://github.com/sebiram/cat-terminal.git ~/.config/
+curl -s https://raw.githubusercontent.com/sebiram/cat-terminal/main/starship.toml | tee ~/.config/starship.toml > /dev/null
+```
+
+Using wget:
+```
+wget -qO ~/.config/starship.toml https://raw.githubusercontent.com/sebiram/cat-terminal/main/starship.toml
 ```
