@@ -1,3 +1,7 @@
+<p align="center">
+  <img alt="Spaceship with Hyper and One Dark" src="./preview.png" width="980px" style="border-radius: 10px;">
+</p>
+
 ## Installation
 This theme relies on starship for its functionality. Therefore, you will need to install starship on your system. The first two steps are snippets from the official [starship docs](https://starship.rs/guide/) to help you get started. =^..^=
 
