@@ -229,8 +229,7 @@ The installation process varies depending on your operating system. Follow the i
 
 #### For Linux/MacOS
 
-Use the `curl` to install the theme file.
-
+Use the `curl` command to install the theme file.
 
 ```bash
 curl -s https://raw.githubusercontent.com/sebilune/cat-terminal/main/starship.toml | tee ~/.config/starship.toml > /dev/null
@@ -246,4 +245,4 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/sebilune/cat-terminal/
 
 ### Step 4: Restart Your Terminal
 
-Now that the Cat Configuration is installed, you need to restart your terminal to see the changes. Close your current terminal session and open a new one. Enjoy your new Cat Configuration!
+Now that the theme is installed, you need to restart your terminal to see the changes. Close your current terminal session and open a new one. Enjoy your new Cat Configuration!
