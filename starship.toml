@@ -1,4 +1,4 @@
-# ^..^ ~ made by github.com/sebilune ~ ^..^
+# ^..^ ~ github.com/sebilune ~ ^..^
 
 format = """
 [/ᐠ - ˕ -マ ](white)\
@@ -17,6 +17,11 @@ $git_branch\
 $git_status\
 $character\
 """
+
+[username]
+format = "[$user](#85A0FF) "
+show_always = true
+disabled = false
 
 [directory]
 format = "[$path ](#85A0FF)"
@@ -57,7 +62,7 @@ format = '[lua $version ]($style)'
 format = '[node $version ](#88F75C)'
 
 [python]
-format = '[py $version ](#FFD343)'
+format = '[py $version (\([$virtualenv](white)\)) ](#FFD343)'
 
 [rust]
 format = '[rs $version ](#CE422B)'
