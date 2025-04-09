@@ -1,15 +1,52 @@
 # ^..^ ~ github.com/sebilune ~ ^..^
 
+# Prompt format and alignment
 format = """
 [/ᐠ - ˕ -マ ](white)\
-$nodejs\
-$rust\
-$python\
+$c\
 $cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$gleam\
 $golang\
+$haskell\
+$haxe\
+$helm\
 $java\
+$julia\
 $kotlin\
+$gradle\
 $lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$quarto\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$vagrant\
+$zig\
 $cmd_duration\
 \n\
 $directory\
@@ -18,19 +55,15 @@ $git_status\
 $character\
 """
 
-[username]
-format = "[$user](#85A0FF) "
-show_always = true
-disabled = false
-
+# Working directory
 [directory]
 format = "[$path ](#85A0FF)"
 truncation_length = 3
 truncation_symbol = '/'
 
+# Git
 [git_branch]
 format = '[git:\([$branch(:$remote_branch)](white)\)](#f1502f)'
-
 [git_status]
 format = "[$all_status$ahead_behind ]($style)"
 modified = '[*](#f1502f)'
@@ -43,33 +76,103 @@ conflicted = ''
 ahead = ''
 behind = ''
 
+# Custom language colors/styles
+[python]
+format = '[\([$virtualenv](white)\) py $version ](#FFD343)'
+[java]
+format = '[java $version ](#F89917)'
+[nodejs]
+format = '[node $version ](#88F75C)'
+[rust]
+format = '[rs $version ](#CE422B)'
 [cmake]
 format = '[clang $version ]($style)'
 
+# Langs
 [golang]
 format = '[go $version ]($style)'
-
-[java]
-format = '[java $version ](#F89917)'
-
 [kotlin]
 format = '[kt $version ]($style)'
-
 [lua]
 format = '[lua $version ]($style)'
+[c]
+format = '[C $version ]($style)'
+[cobol]
+format = '[cobol $version ]($style)'
+[daml]
+format = '[daml $version ]($style)'
+[dart]
+format = '[dart $version ]($style)'
+[deno]
+format = '[deno $version ]($style)'
+[dotnet]
+format = '[dotnet $version ]($style)'
+[elixir]
+format = '[elixir $version ]($style)'
+[elm]
+format = '[elm $version ]($style)'
+[erlang]
+format = '[erlang $version ]($style)'
+[fennel]
+format = '[fennel $version ]($style)'
+[gleam]
+format = '[gleam $version ]($style)'
+[haskell]
+format = '[haskell $version ]($style)'
+[haxe]
+format = '[haxe $version ]($style)'
+[helm]
+format = '[helm $version ]($style)'
+[julia]
+format = '[julia $version ]($style)'
+[gradle]
+format = '[gradle $version ]($style)'
+[nim]
+format = '[nim $version ]($style)'
+[ocaml]
+format = '[ocaml $version ]($style)'
+[opa]
+format = '[opa $version ]($style)'
+[perl]
+format = '[perl $version ]($style)'
+[php]
+format = '[php $version ]($style)'
+[pulumi]
+format = '[pulumi $version ]($style)'
+[purescript]
+format = '[purescript $version ]($style)'
+[quarto]
+format = '[quarto $version ]($style)'
+[raku]
+format = '[raku $version ]($style)'
+[rlang]
+format = '[rlang $version ]($style)'
+[red]
+format = '[red $version ]($style)'
+[ruby]
+format = '[ruby $version ]($style)'
+[scala]
+format = '[scala $version ]($style)'
+[solidity]
+format = '[solidity $version ]($style)'
+[swift]
+format = '[swift $version ]($style)'
+[terraform]
+format = '[terraform $version ]($style)'
+[typst]
+format = '[typst $version ]($style)'
+[vlang]
+format = '[vlang $version ]($style)'
+[vagrant]
+format = '[vagrant $version ]($style)'
+[zig]
+format = '[zig $version ]($style)'
 
-[nodejs]
-format = '[node $version ](#88F75C)'
-
-[python]
-format = '[py $version (\([$virtualenv](white)\)) ](#FFD343)'
-
-[rust]
-format = '[rs $version ](#CE422B)'
-
+# Command duration (only shows if command took longer than 2 seconds)
 [cmd_duration]
 format = '[$duration](white)'
 
+# Prompt symbol
 [character]
 success_symbol = '[\$](white)'
 error_symbol = '[\$](red)'
